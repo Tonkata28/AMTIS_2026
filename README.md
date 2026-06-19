@@ -18,9 +18,8 @@ I competed **solo** with a 7-hour time limit to produce a working solution. This
 ## What it does
 
 - Simulates buying and selling of stocks with changing prices
+- Registering accounts and account login state with cookies
 - Exposes the simulation through a Python web server
-- Serves a web interface for interacting with the simulator
-- Based on the official competition task (see `tickets_and_problem_desc/`)
 
 ---
 
@@ -37,7 +36,6 @@ I competed **solo** with a 7-hour time limit to produce a working solution. This
 ```
 AMTIS_2026/
 ├── amtis_server/             # Python server and trading/simulation logic
-├── tickets_and_problem_desc/ # Original competition problem statement and task tickets
 └── LICENSE
 ```
 
