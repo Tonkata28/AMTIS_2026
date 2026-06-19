@@ -1,0 +1,42 @@
+# Идентификаторът на Вашия екип. Използвайте задължително този, който сте получили като стойност на API_KEY в credentials.env
+participantId: "solostyle"
+
+# Базовият url на вашият сървър (Задължително)
+baseURL: "http://localhost:8000"
+
+# Banner style for CLI output - "modern" or "old-school" (optional, default: modern)
+bannerStyle: "modern"
+
+# Групите тестове, които Вашият екип е одобрил да бъдат изпълнени (Задължително)
+# Всяка задача има своя група с тестове, написана в нея
+enabledGroups:
+  - "A1_GET_team"
+  - "A2_GET_group_photo_BEFORE"
+  - "A3_GET_group_photo_AFTER"
+  - "M1_STARTUP_market_auth_GET_team"
+  - "M2_GET_stocks_USD"
+  - "M3_GET_stocks_filter_USD"
+  - "M4_GET_stocks_export_USD"
+  - "M5_GET_v2_stocks_MULTICURR"
+  - "U1_POST_users"
+  - "U2_POST_sessions"
+  - "U3_PATCH_me"
+  - "U4_PATCH_me"
+  - "W1_GET_wallet_USD"
+  - "W2_POST_wallet_deposits_USD"
+  - "W3_POST_wallet_withdrawals_USD"
+  - "W4_GET_v2_wallet_MULTICURR"
+  - "W5_POST_v2_wallet_deposits_MULTICURR"
+  - "W6_POST_v2_wallet_withdrawals_MULTICURR"
+  - "T1_GET_my_stocks_USD"
+  - "T2_POST_my_stocks_purchases_USD"
+  - "T3_POST_my_stocks_sales_USD"
+  - "T4_GET_v2_my_stocks_MULTICURR"
+  - "T5_POST_v2_stocks_purchases_MULTICURR"
+  - "T6_POST_v2_stocks_sales_MULTICURR"
+  - "FX1_GET_forex"
+  - "FX2_POST_forex_purchases_MULTICURR"
+  - "R1_GET_regulations"
+  - "R2_PRECHECK_stock_purchase_MULTICURR"
+  - "H1_GET_reports_history_USD"
+  - "H2_GET_v2_reports_history_MULTICURR"
