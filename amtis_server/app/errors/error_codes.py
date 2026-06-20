@@ -48,6 +48,12 @@ ERRORS: dict[str, ErrorSpec] = {
     "REGULATION_BLOCKED": ErrorSpec(
         "REGULATION_BLOCKED", "Операцията е блокирана от регулация", 451
     ),
+    "MARKET_CLOSED": ErrorSpec(
+        "MARKET_CLOSED", "Борсата е затворена", 503
+    ),
+    "EXTERNAL_SERVICE_ERROR": ErrorSpec(
+        "EXTERNAL_SERVICE_ERROR", "Грешка във външна услуга", 502
+    ),
 
     "INTERNAL_ERROR": ErrorSpec(
         "INTERNAL_ERROR", "Възникна грешка при изпълнение", 500
@@ -56,6 +62,7 @@ ERRORS: dict[str, ErrorSpec] = {
 
 class Codes:
     INVALID_REQUEST = "INVALID_REQUEST" # generic code for not specified issues
+    MARKED_CLOSED = "MARKED_CLOSED"
 
     MISSING_REQUIRED_FIELDS = "MISSING_REQUIRED_FIELDS"
     VALIDATION_FAILED = "VALIDATION_FAILED"
@@ -70,5 +77,6 @@ class Codes:
     INSUFFICIENT_QUANTITY = "INSUFFICIENT_QUANTITY"
     NOT_FOUND = "NOT_FOUND"
     REGULATION_BLOCKED = "REGULATION_BLOCKED"
+    EXTERNAL_SERVICE_ERROR = "EXTERNAL_SERVICE_ERROR"
 
     INTERNAL_ERROR = "INTERNAL_ERROR"

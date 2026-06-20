@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query, Depends
-from ..models.forex import ForexQuery, ForexPurchaseQuery
 from typing import Annotated
+from ..models.forex import ForexQuery, ForexPurchaseQuery
 from ..services.forex import exchange_currency, get_exchange_rates
 from ..dependencies.cookies import get_user_id
 
